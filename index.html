@@ -1,0 +1,31 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Fantasy Sports Reject</title>
+    <style>
+      
+
+
+    </style>
+  </head>
+  <body>
+  
+    <footer>
+      <h3>Text "1", "2", "3", or "4" to</h3>
+      <h1>(925) 230-2223</h1>
+    </footer>
+    
+    <!-- SOCKET.IO -->
+    <script src="/socket.io/socket.io.js"></script>
+	  <script>
+    		var socket = io();
+    		socket.on('text', function (frame) {
+            console.log(frame);
+
+        });
+	  </script>
+
+    <!-- JQUERY -->
+    <script src="https://code.jquery.com/jquery-3.1.0.min.js"   integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s="     crossorigin="anonymous"></script>
+  </body>
+</html>
