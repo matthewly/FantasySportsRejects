@@ -22,6 +22,14 @@ app.post('/', function (req, res) {
   console.log(req.body.Body);
   var text_content = req.body.Body;
 
+  if (text_content == '1')
+    io.emit('text', 1);
+  else if (text_content == '2')
+    io.emit('text', 2);
+  else if (text_content == '3')
+    io.emit('text', 3);
+  else
+    io.emit('text', 4);
 
   res.json({text: req.body.Body});
 });

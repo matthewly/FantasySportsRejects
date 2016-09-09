@@ -5,11 +5,20 @@
     <style>
       
 
-
+      footer {
+          width: 100%;
+          position: absolute;
+          text-align: center;
+          top: 550px;
+      }
     </style>
   </head>
   <body>
-  
+    
+      <h3 id="frame">Woo</h3>
+    
+    
+
     <footer>
       <h3>Text "1", "2", "3", or "4" to</h3>
       <h1>(925) 230-2223</h1>
@@ -21,7 +30,25 @@
     		var socket = io();
     		socket.on('text', function (frame) {
             console.log(frame);
+            $('#frame').text(frame);
+            
+      		  if (frame == 1) {
+              //$('img').attr('src', './images/frame1.jpg');
+              
+            }
 
+            else if (frame == 2) {
+              
+
+            }
+            
+            else if (frame == 3) {
+              
+            }
+            
+            else {
+              
+            }
         });
 	  </script>
 
