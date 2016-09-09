@@ -1,0 +1,20 @@
+{
+  "name": "FantasySportsRejects",
+  "version": "0.0.1",
+  "description": "Fantasy Sport Reject Memes",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/matthewly/FantasySportsRejects"
+  },
+  "author": "Matthew Ly",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.15.2",
+    "express": "^4.14.0",
+    "socket.io": "^1.4.8"
+  }
+}
