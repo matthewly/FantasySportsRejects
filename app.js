@@ -18,18 +18,9 @@ app.get('/', function (req, res) {
 
 app.post('/', function (req, res) {
   
-  //io.emit('text', req.body.Body);
-  console.log(req.body.Body);
   var text_content = req.body.Body;
-
-  if (text_content == '1')
-    io.emit('text', 1);
-  else if (text_content == '2')
-    io.emit('text', 2);
-  else if (text_content == '3')
-    io.emit('text', 3);
-  else
-    io.emit('text', 4);
+  
+  io.emit('text', text_content);
 
   res.json({text: req.body.Body});
 });

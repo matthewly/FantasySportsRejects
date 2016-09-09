@@ -32,7 +32,7 @@
     
 
     <footer>
-      <h3>Text a number between 1 and 8 to</h3>
+      <h3>Text the name of a rejected fantasy sports player to</h3>
       <h1>(925) 230-2223</h1>
     </footer>
     
@@ -41,25 +41,50 @@
 	  <script>
     		var socket = io();
     		socket.on('text', function (name) {
+            
+            var meme1 = "goes to reject club, gets rejected!";
+            var meme2 = ". . . You must reject.";
+            var meme3 = "gets rejected . . . like a BOSS!";
+            var meme4 = "says &quot;Rejections… rejections everywhere!&quot;";
+            var meme5 = "asks forever alone to be friends";
+            var meme6 = "says &quot;Fine…I didn’t want to play anyways&quot;";
+            var meme7 = "plans for weeks … humiliated for a lifetime";
+            var meme8 = "Winter Rejection is coming . . .";
+
             console.log(name);
             $('#name').text(name);
             
-      		  if (name == 1) {
-              $('#meme').text("goes to reject club... gets rejected!");
-              
+            var index = Math.random();
+      		  if (index >= 0 && index < 0.125) {
+              $('#meme').text(meme1);
             }
 
-            else if (name == 2) {
-              
+            else if (index >= 0.125 && index < 0.25) {
+              $('#meme').text(meme2);
+            }
+            
+            else if (index >= 0.25 && index < 0.375) {
+              $('#meme').text(meme3);
+            }
 
+            else if (index >= 0.375 && index < 0.5) {
+              $('#meme').text(meme4);
+            }
+
+            else if (index >= 0.5 && index < 0.625) {
+              $('#meme').text(meme5);
+            }
+
+            else if (index >= 0.625 && index < 0.75) {
+              $('#meme').text(meme6);
             }
             
-            else if (name == 3) {
-              
+            else if (index >= 0.75 && index < 0.875) {
+              $('#meme').text(meme7);
             }
-            
+
             else {
-              
+              $('#meme').text(meme8);
             }
         });
 	  </script>
